@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=REM:wght@200&family=Roboto+Mono:wght@300&display=swap');
+body {
+    font-family: 'REM', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px; 
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.logo-a {
+    color: black;
+}
+
+header {
+    background-color:#398779;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+}
+
+a {
+    font-size: large;
+    color:black;
+    text-decoration: none;
+}
+
+a:hover{
+    color:red;
+    text-decoration: none;
+}
+
+li {
+    display: inline;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    position:absolute;
+    top: 5px;
+    margin: 0;
+    left:150px;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 8vh;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.menu {
+    width: calc(100% - 4em);
+    height: 2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2em;
+    color:white;
+}
+
+.menu_item {
+    margin-right: 1em;
+    display: flex;
+}
+
+.menu_small_icon {
+    display: none;
+}
+
+.menu-small {
+    display: none;
+    height: 2em;
+}
+
+.menu_small_item {
+    display: none;
+}
+
+a {
+    color: white;
+}
+
+.stick {
+    width: 80%;
+    height: 5px;
+    background: black;
+}
+
+.search {
+    background-color: #561F1F;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    padding:15px;
+}
+
+.inputsearch {
+    background-color: #D9D9D9;
+    width:550px;
+    height:40px;
+    font-size:18px;
+    text-align: left;
+    border-radius: 5px;
+    border:none;
+}
+
+.searchimg {
+    width:3%;
+}
+
+.banner {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.idea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:40%;
+
+}
+
+.photo {
+    background-image: url(../images/резинки.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width:60%;
+    padding:200px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.buttonbanner {
+    width:210px;
+    height:70px;
+    background-color: #398779;
+    color:white;
+    border: none;
+}
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.photos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.photo1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.tovar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo2 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+h4 {
+    font-size: 50px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+    
+}
+
+.slick-slider {
+    display: flex !important;
+    align-items: center;
+}
+
+.carousel__item {
+    display: flex !important;
+    flex-direction: column;  
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #373737;
+    color: white;
+    padding: 14px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.tel, .copyright {
+    margin-right: 150px;
+}
+
+section {
+    display:flex;
+}
+
+.contacts {
+    padding-left: 30px;
+    background-color: rgb(220, 230, 230);
+    height:665px;
+    width:20%;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+#map {
+    height:665px;
+    width:80%;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+@media (max-width: 650px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-small {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+        position: absolute;
+        background: white;
+        transform: translateX(-200%);
+    }
+
+    .menu_small_item {
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu_small_item:first-child {
+        padding-top: calc(50px + 2em);
+    }
+
+    .menu_small_icon {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo {
+        z-index: -1;
+    }
+
+}
